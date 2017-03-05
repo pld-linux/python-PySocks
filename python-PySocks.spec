@@ -6,23 +6,23 @@
 Summary:	SOCKS client module for Python 2
 Summary(pl.UTF-8):	Moduł klienta SOCKS dla Pythona 2
 Name:		python-PySocks
-Version:	1.5.6
-Release:	2
+Version:	1.6.6
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.python.org/simple/pysocks/
-Source0:	https://pypi.python.org/packages/source/P/PySocks/PySocks-%{version}.tar.gz
-# Source0-md5:	c825c7c52b2c79dde73cac8d04bd25cb
+Source0:	https://files.pythonhosted.org/packages/source/P/PySocks/PySocks-%{version}.tar.gz
+# Source0-md5:	571f4c23982fa86bf0e7a441f1b6c881
 URL:		https://pypi.python.org/pypi/PySocks
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
-BuildRequires:	python-modules >= 1:2.5
+BuildRequires:	python-modules >= 1:2.6
 %endif
 %if %{with python3}
 BuildRequires:	python3-modules >= 1:3.2
 %endif
-Requires:	python-modules >= 1:2.5
+Requires:	python-modules >= 1:2.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
