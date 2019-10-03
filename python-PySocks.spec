@@ -8,18 +8,18 @@
 Summary:	SOCKS client module for Python 2
 Summary(pl.UTF-8):	Moduł klienta SOCKS dla Pythona 2
 Name:		python-PySocks
-Version:	1.6.8
+Version:	1.7.1
 Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pysocks/
 Source0:	https://files.pythonhosted.org/packages/source/P/PySocks/PySocks-%{version}.tar.gz
-# Source0-md5:	441c4e3bf5b042f7e70613cd871df26c
+# Source0-md5:	89b1a6865c61bae67a32417517612ee6
 URL:		https://pypi.org/project/PySocks/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
-BuildRequires:	python-modules >= 1:2.6
+BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-setuptools
 %if %{with tests}
 BuildRequires:	3proxy
@@ -29,7 +29,7 @@ BuildRequires:	python-test-server
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-modules >= 1:3.2
+BuildRequires:	python3-modules >= 1:3.4
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	3proxy
@@ -38,7 +38,7 @@ BuildRequires:	python3-pytest
 BuildRequires:	python3-test-server
 %endif
 %endif
-Requires:	python-modules >= 1:2.6
+Requires:	python-modules >= 1:2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,7 +54,7 @@ służący do tunelowania połączeń poprzez proxy SOCKS.
 Summary:	SOCKS client module for Python 3
 Summary(pl.UTF-8):	Moduł klienta SOCKS dla Pythona 3
 Group:		Libraries/Python
-Requires:	python3-modules >= 1:3.2
+Requires:	python3-modules >= 1:3.4
 
 %description -n python3-PySocks
 This module provides a standard socket-like interface for Python
