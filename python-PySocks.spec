@@ -9,7 +9,7 @@ Summary:	SOCKS client module for Python 2
 Summary(pl.UTF-8):	Moduł klienta SOCKS dla Pythona 2
 Name:		python-PySocks
 Version:	1.7.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pysocks/
